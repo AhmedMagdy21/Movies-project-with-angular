@@ -1,0 +1,202 @@
+// Start Global variabls
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap");
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+$bgColor: #131722;
+$lightBgColor: #24baef;
+$bgTransparent: rgba(36, 186, 239, 0.6);
+$borderColor: #a8a8a83d;
+$borderHeight: #a8a8a83d;
+$mainColor: 1px;
+$secondFontColor: #949cb0;
+$fontColor: #fff;
+$jumbotronBg: #131a2c;
+// End Global variabls
+
+// Start global rules
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe ui light";
+  font-weight: 800;
+  background-image: url(assets/images/cinema.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  color: $fontColor;
+  
+    
+  }
+  // style sidebar
+  #sidebar{
+    
+  position: fixed;
+  left: 0;
+  top: 100px;
+  z-index: 99999;
+  
+
+    i{
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.253);
+      cursor: pointer;
+      border-radius: 30%;
+
+    }
+    #colorBox{
+      background-color:rgba(14, 13, 13, 0.034) ;
+      padding: 5px;
+      border-radius: 5px;
+      .color-box{
+        display: inline-block;
+        margin:5px;
+        width: 30px;
+        height: 30px;
+        background-color: brown;
+        border-radius: 50%;
+      }
+    }
+}
+//end sidebar
+
+//no text-decoration
+a {
+  color: white;
+  text-decoration: none;
+  
+}
+.background {
+  background-color: rgba(0, 0, 0, 0.788);
+  height: 100%;
+}
+
+.member {
+  position: relative;
+  overflow: hidden;
+  transition: 10s;
+  border-radius: 3%;
+
+  .caption-movie {
+    background-color: rgba(172, 174, 177, 0.301);
+    color: $bgColor;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    border-radius: 5%;
+  }
+}
+
+// hover to social
+
+
+img {
+  border-radius: 3%;
+  transition: transform .5s;
+}
+
+.movie a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.movie :hover .caption-movie {
+  top: 0;
+} 
+
+// no border in hover
+.movie:hover img  {
+  border-radius: 3%;
+  transform: scale(1.1, 1.1);
+ 
+}
+
+.img-header:hover img {
+  // border-style: 5px solid;
+  // border-radius: 5%;
+  transform: scale(1.1, 1.1);
+}
+.far {
+  font-size: 50px;
+}
+#box-brdr {
+  color: #fff;
+  border-style: 5px solid;
+  border-radius: 1.5%;
+  box-shadow: rgb(218, 202, 192) 0px 14px 19px 5px;
+}
+// .movie-poster{
+//   border-style: 5px solid #fff;
+//   border-radius: 1.5%;
+// }
+
+
+
+nav {
+ background-color: rgba(0, 0, 0, 0.438);
+ box-shadow: rgba(5, 5, 5, 0.596) 0px 14px 19px 5px;
+  
+  .nav-link {
+    font-size: 19px;
+    font-weight: bolder;
+    color: $fontColor !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+  } 
+}
+
+nav .nav-link:hover {
+  color: rgb(0, 210, 230) !important;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+// End global rules
+
+.jumbotron {
+  margin-top: 18px;
+  background-color: $jumbotronBg;
+  box-shadow: rgb(50, 50, 93) 0px 14px 19px -5px;
+}
+.brdr {
+  height: 1px;
+  background-color: $borderColor;
+}
+.second-color {
+  color: $secondFontColor;
+}
+.vote {
+  background-color: $lightBgColor;
+  padding: 5px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

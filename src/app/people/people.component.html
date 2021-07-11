@@ -1,0 +1,46 @@
+<div class="container p-5" @fade>
+  <div class=" row py-5">
+
+    <div class=" col-md-4 d-flex align-items-center">
+      <div>
+        <div class="brdr w-25 mb-4"></div>
+      <h3>Trending People to Watch <br> Right Now </h3>
+      <p class="second-color my-2">most watched tv by days</p>
+      <div class="brdr w-75 mt-4"></div>
+      </div>
+    </div> 
+    <div *ngFor='let person of trendingPeople' class="col-md-2 text-center ">
+      <div class=" movie my-2 position-relative">
+        <div class="member">
+          <a [routerLink]='["/persondetalis" , person.id]' routerLinkActive="router-link-active" >
+            <img [src]="imgPrefix+ person.profile_path" alt="person.name" class="img-fluid">
+            <div class="caption-movie d-flex w-100">
+              <i class="far fa-eye m-auto p-auto "></i>            
+            </div>
+          </a>
+      </div>
+        <h6 class="m-2">{{person.name}}</h6>
+    </div> 
+  </div>
+  </div>
+    <!-- <div class=" row py-5">
+
+      <div class=" col-md-4 d-flex align-items-center">
+        <div>
+          <div class="brdr w-25 mb-4"></div>
+        <h3>Trending People to Watch <br> Right Now </h3>
+        <p class="second-color my-2">most watched tv by days</p>
+        <div class="brdr w-75 mt-4"></div>
+        </div>
+      </div> 
+      <div *ngFor='let person of trendingPeople' class="col-md-2 text-center ">
+        <div class=" movie my-2 position-relative">
+          <img [src]="imgPrefix+ person.profile_path" alt="person.name" class="img-fluid">
+          <h6 class="m-2">{{person.name}}</h6>
+          
+        </div>
+          
+        
+      </div> 
+    </div> -->
+</div>

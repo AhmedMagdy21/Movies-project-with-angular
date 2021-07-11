@@ -1,0 +1,35 @@
+#detalis{
+    position: relative;
+    img{
+        margin-top: 4%;
+        height: 75%;
+    }
+}
+
+
+.back-ground-detalis{
+    height: 90.7vh;
+    width: 100%;
+    background-size: cover;
+    border-radius: 0%;
+    position: absolute;
+    
+  
+}
+.background-dark {
+    background-color: rgba(0, 0, 0, 0.753);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    
+   
+  }
+.vote{
+   padding: 10px;
+   border: solid 4px white;
+   border-radius: 100%;
+   position: absolute;
+   top: 0;
+   
+}

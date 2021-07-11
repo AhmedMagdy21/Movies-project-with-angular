@@ -1,0 +1,48 @@
+
+<section id="Login" class=" mt-5">
+    <div class="container">
+        <div class="">
+            <div class="">
+               <div class="Logo w-75 m-auto text-center pb-5">
+                   <h1>welcome</h1>
+                 <!-- <ul class="Noxe d-flex">
+                     <li>N</li>
+                     <li>o</li>
+                     <li>x</li>
+                     <li>e</li>
+                 </ul> -->
+                 <h6 class="m-0"> ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+                 
+               </div>
+            </div>
+            <div class="">
+                <div  id="box-brdr" class="w-50 m-auto   p-2 login " @fade>
+   
+                    <div *ngIf='error || success' [class.alert-success]='success' [class.alert-danger]='error'>
+                        <h2 *ngIf='error'>{{error}}</h2>
+                        <h2 *ngIf='success'>{{success}}</h2>
+                    </div>
+                
+                    <form [formGroup]="loginForm" (ngSubmit)='submitloginForm(loginForm)'>
+                
+                
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input formControlName="email" class="form-control" type="text" id="email">
+                
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="password">Password :</label>
+                            <input formControlName="password" class="form-control"  type="password" id="password">
+                        </div>
+                        <button [disabled]='loginForm.invalid' class="btn btn-outline-light mr-5 px-4" type="submit">login</button>
+                        <button [routerLink] = '["/register"]' class="btn btn-outline-light" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
