@@ -1,49 +1,36 @@
-<section id="detalis"class="p-2" @fade >
-    <!-- <img class="back-ground-detalis" [src]="imgPrefix+personDetalis?.known_for.backdrop_path" alt="movie.title"> -->
-  
-    <div id="background-darkmod" class="background-dark ">
-    </div>
-    <div>
-        <div class="container py-5">
-          <div class="row">
-              <div class="col-md-4">
-                  <img class="w-100 " [src]="imgPrefix+personDetalis?.profile_path" alt="movie.title">
-              </div>
-              <div class="col-md-8 ">
-                  <div class="title py-5">
-  
-                      <h3 class="m-2">Name : {{personDetalis?.name}}</h3>
-                      <h3 class="m-2">Birthday : {{personDetalis?.birthday}}</h3>
-      
-                      <div class="place">
-                        <i class="fas fa-map-marker"></i>
-                        <h3 class="m-2">{{personDetalis?.place_of_birth}}</h3>
-                      
-                      </div>
-                      <div class="social-media text-light m-5">
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-facebook-f"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-instagram"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-twitter"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-youtube"></a>
+<section  @fade >
+    <div id="detalis"class="p-2">
+ 
+    
+      <div>
+          <div class="container people-detalis py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="w-100 " [src]="imgPrefix+personDetalis?.profile_path" alt="movie.title">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="title mt-5 py-5">
+    
+                        <h3 class="m-2">Name : {{personDetalis?.name}}</h3>
+                        <h3 class="m-2">Birthday : {{personDetalis?.birthday}}</h3>
+                        <h3 class="m-2">Residence :{{personDetalis?.place_of_birth}}</h3>
                         
-                      </div>
-                   
-                      <div class="icon">
-                        <!-- <p>Custom rating template provided as child element</p>
-
-                        <ngb-rating [(rate)]="currentRate">
-                        <ng-template let-fill="fill" let-index="index">
-                            <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
-                        </ng-template>
-                        </ngb-rating>
-                        <hr>
-                        <pre>Rate: <b>{{currentRate}}</b></pre> -->
-
-                      </div>
+                        <div class="social-media text-light m-5">
+                          <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-facebook-f"></a>
+                          <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-instagram"></a>
+                          <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-twitter"></a>
+                          <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-youtube"></a>
+                          
+                        </div>
                      
-                    </div>
-              </div>
-          </div>
-      </div>
-      </div>
+                   
+                       
+                      </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="background-darkmod" class="background-dark  ">
+    </div>
 </section>

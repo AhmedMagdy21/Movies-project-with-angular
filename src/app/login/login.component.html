@@ -1,29 +1,32 @@
 
-<section id="Login" class=" mt-5">
-    <div class="container">
-        <div class="">
-            <div class="">
+<section id="Login">
+    <div class="container ">
+        <div class="text-brand">
+            
+        </div>
+            <!-- <div class="">
                <div class="Logo w-75 m-auto text-center pb-5">
                    <h1>welcome</h1>
-                 <!-- <ul class="Noxe d-flex">
+                 <ul class="Noxe d-flex">
                      <li>N</li>
                      <li>o</li>
                      <li>x</li>
                      <li>e</li>
-                 </ul> -->
+                 </ul>
                  <h6 class="m-0"> ipsum, dolor sit amet consectetur adipisicing elit.</h6>
                  
                </div>
-            </div>
-            <div class="">
-                <div  id="box-brdr" class="w-50 m-auto   p-2 login " @fade>
+            </div> -->
+            <div class="row box-login mt-5">
+                
+                <div  id="box-brdr" class=" w-50 m-auto  p-2 login " @fade>
    
                     <div *ngIf='error || success' [class.alert-success]='success' [class.alert-danger]='error'>
                         <h2 *ngIf='error'>{{error}}</h2>
                         <h2 *ngIf='success'>{{success}}</h2>
                     </div>
                 
-                    <form [formGroup]="loginForm" (ngSubmit)='submitloginForm(loginForm)'>
+                    <form class="" [formGroup]="loginForm" (ngSubmit)='submitloginForm(loginForm)'>
                 
                 
                         <div class="form-group">
@@ -41,8 +44,10 @@
                     </form>
                 </div>
             </div>
+               
+            
         </div>
-    </div>
+  
    
 </section>
 

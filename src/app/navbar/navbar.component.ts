@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { MoviesService } from '../movies.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +10,8 @@ import { AuthService } from '../auth.service';
 })
 export class NavbarComponent implements OnInit {
   isLogin:boolean =false;
-  constructor(private _AuthService:AuthService) {
+ 
+  constructor(private _AuthService:AuthService, private _MoviesService:MoviesService) {
   _AuthService.currentUser.subscribe(()=>{
     if(_AuthService.currentUser.getValue() !=null)
     {
@@ -19,6 +22,7 @@ export class NavbarComponent implements OnInit {
       this.isLogin =false;
     }
   })
+ 
 }
   isLogOut()
   {

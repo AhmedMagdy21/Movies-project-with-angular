@@ -4,7 +4,7 @@
 
 
 .back-ground-detalis{
-    height: 90.7vh;
+    height:100vh;
     width: 100%;
     background-size: cover;
     border-radius: 0%;
@@ -13,7 +13,8 @@
 }
 .background-dark {
     background-color: rgba(0,  0, 0, 0.788);
-    height: 90.7vh;
+    background-size: initial;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;

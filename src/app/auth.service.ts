@@ -15,12 +15,12 @@ export class AuthService {
     }
   }
   currentUser =new BehaviorSubject(null);
-
+  userName:any = ""
   savecurrentUser()
   {
     let token:any = localStorage.getItem('userToken');
     this.currentUser.next (jwtDecode(token));
-    console.log(this.currentUser);
+    this.userName = this.currentUser.value
   }
   
   register(formData:any):Observable<any>

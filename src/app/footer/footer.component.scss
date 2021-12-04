@@ -1,0 +1,65 @@
+// .footer{
+//     background-color: rgba(0, 0, 0, 0.74);
+//     height: 30vh;
+//     position: relative;
+//    h2{
+//       position: absolute;
+//       top: 15%;
+//       left: 47%;
+     
+    
+//    } 
+//    .icon-footer{
+
+//        position: absolute;
+//        bottom: 40%;
+//        left: 45%;
+//        .i-footer{
+//            font-size: 20px;
+//        }
+     
+//    }
+//    p{
+//        position: absolute;
+//        bottom: 0;
+//        left: 40%;
+//        font-size: 15px;
+//        color:rgba(128, 128, 128, 0.452);
+
+//    }
+
+// }
+// .footer :hover h2  {
+//     color:  rgb(11, 103, 145);
+   
+// }
+footer{
+    padding: 30px;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    // width: 100%;
+    background-color: #151516;
+    color: gray;
+    font-size: 10px;
+    a{
+        text-decoration: none;
+        color: rgba(128, 128, 128, 0.637);
+        padding: 10px;
+    }
+    a:hover{
+        color: gray;
+    }
+    .social {
+        padding: 5px;
+        i{
+            font-size: 16px;
+            margin: 10px;
+        }
+        i:hover{
+           color: #1f528d;
+        }
+    }
+    
+  
+}

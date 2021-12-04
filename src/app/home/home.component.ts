@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgxTypedJsComponent } from 'ngx-typed-js';
 import { fade } from 'src/animations';
 import { MoviesService } from '../movies.service';
+
+
 
 declare let $:any;
 @Component({
@@ -10,12 +12,14 @@ declare let $:any;
   styleUrls: ['./home.component.scss'],
   animations: [fade]
 })
+
 export class HomeComponent implements OnInit {
   trendingMovies:any[] = [];
   trendingTv:any[] = [];
   trendingPeople:any[] = [];
   imgPrefix:string = `http://image.tmdb.org/t/p/w500/`
-  constructor(private _MoviesService:MoviesService) 
+  
+  constructor(private _MoviesService:MoviesService)
   {
     _MoviesService.getTrending('movie').subscribe ((data)=>
     {

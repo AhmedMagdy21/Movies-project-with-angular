@@ -1,46 +1,46 @@
-<section id="detalis" class="" >
+<section  class="" >
+ 
+  <div id="detalis">
     <img class="back-ground-detalis" [src]="imgPrefix+movieDetalis?.backdrop_path" alt="movie.title">
-  
     <div class="background-dark">
     </div>
-    <div>
-        <div class="container mt-5 py-5">
-          <div class="row">
-              <div class="col-md-4">
-                  <img class="w-100 " [src]="imgPrefix+movieDetalis?.poster_path" alt="movie.title">
-              </div>
-              <div class="col-md-8 text-center" >
-                  <div class="title py-5">
-                    <div class="vote ">
-                     {{movieDetalis?.vote_average}}
-                    </div>
-  
-                      <h3 class="m-2">{{movieDetalis?.title}}</h3>
-                      <p class="mt-5 p-3">{{movieDetalis?.overview}}</p>
-                      <div class="icon-detalis">
-                        
-                      </div>
+    <div class="container mt-5 py-5">
+      <div class="row">
+          <div class="col-md-4">
+              <img class="w-100 " [src]="imgPrefix+movieDetalis?.poster_path" alt="movie.title">
+          </div>
+          <div class="col-md-8 text-center" >
+              <div class="title py-5">
+                <div class="vote ">
+                 {{movieDetalis?.vote_average}}
+                </div>
+
+                  <h3 class="m-2">{{movieDetalis?.title}}</h3>
+                  <p class="mt-5 p-3">{{movieDetalis?.overview}}</p>
+             
+                
+                  <div class="btn d-flex justify-content-center align-items-lg-center">
+                    <button type="button" class="btn btn-outline-light m-3 p-3 w-25 font-weight-bolder">Play
+                        <i class=" fas fa-play ml-2  "></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light m-3 p-3 w-25 font-weight-bolder">Download
+                        <i class="fas fa-download w-25"></i>
+                    </button>
+                  </div>
+                  <div class="social-media text-light m-5">
+                    <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-facebook-f"></a>
+                    <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-instagram"></a>
+                    <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-twitter"></a>
+                    <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-youtube"></a>
                     
-                      <div class="btn d-flex justify-content-center align-items-lg-center">
-                        <button type="button" class=" btn btn-light  m-3 p-3 w-25 font-weight-bolder">Play
-                            <i class=" fas fa-play ml-2  "></i>
-                        </button>
-                        <button type="button" class="btn btn-light m-3 p-3 w-25 font-weight-bolder">Download
-                            <i class="fas fa-download w-25"></i>
-                        </button>
-                      </div>
-                      <div class="social-media text-light m-5">
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-facebook-f"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-instagram"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-twitter"></a>
-                        <a class="navbar-brand nav-link font-weight-bolder p-1 fab mx-2 fa-youtube"></a>
-                        
-                      </div>
-               
-                     
-                    </div>
-              </div>
+                  </div>
+           
+                 
+                </div>
           </div>
       </div>
-      </div>
+  </div>
+  </div>
+    
+   
 </section>

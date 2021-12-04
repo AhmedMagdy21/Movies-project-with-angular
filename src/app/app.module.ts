@@ -12,7 +12,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { PeopleComponent } from './people/people.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import{HttpClientModule}from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeHeaderComponent } from './home-header/home-header.component';
@@ -20,7 +20,8 @@ import { DetalisComponent } from './detalis/detalis.component';
 import { TvdetalisComponent } from './tvdetalis/tvdetalis.component';
 import { PersondetalisComponent } from './persondetalis/persondetalis.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 
@@ -40,13 +41,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     TvdetalisComponent,
     PersondetalisComponent,
     SidebarComponent,
+    FooterComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule, CarouselModule 
+    BrowserAnimationsModule, CarouselModule, NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

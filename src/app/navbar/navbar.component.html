@@ -1,5 +1,9 @@
-<nav class="navbar navbar-expand-lg fixed-top p-0">
-    <a class="navbar-brand nav-link font-weight-bolder text-center  ">NOXE</a>
+
+
+<nav class="navbar navbar-expand-lg fixed-top p-3">
+      <a href="#" class="navbar-brand nav-link font-weight-bolder text-center  ">NOXE</a>
+
+  <div class="container">
     <button
       class="navbar-toggler"
       type="button"
@@ -34,12 +38,12 @@
           <a  *ngIf='isLogin' class="nav-link" routerLink = 'people'>People</a>
         </li>
       </ul>
-      
-      <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-      </form>
+     
+     
+    
+
   
-      <div class="social-media text-light">
+      <div class="social-media px-5 text-light">
         <i class="nav-link p-0 fab mx-2 fa-instagram"></i>
         <i class="nav-link p-0 fab mx-2 fa-spotify"></i>
         <i class="nav-link p-0 fab mx-2 fa-facebook"></i>
@@ -65,6 +69,8 @@
         <a  *ngIf='isLogin' class="nav-link" routerLink = 'settings'>Settings</a>
       </li>
     </ul>
+  </div>
+  
   </nav>
   
   

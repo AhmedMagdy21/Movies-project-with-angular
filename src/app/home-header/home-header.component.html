@@ -1,15 +1,15 @@
-<section class="vh-100 d-flex align-items-end">
-    <div class="container">
-      <div class="Web-address pb-5 "> 
-        <ul class="text-animation hidden font-weight-bolder text-center  "> 
-          <li>OUR</li>
-          <li>LATEST</li>
-          <li> MOVIES </li>
-        </ul>
+<section class=" d-flex align-items-end">
+  
+    <div class="container header-bg">
     
-      </div>
+      <!-- <div class="Web-address pb-5 d-flex align-items-center justify-content-center "> 
+       
+     
+    
+      </div> -->
        
         <div class="demo m-5">
+          
             <owl-carousel-o [options]="customOptions">
                 <ng-container *ngFor="let movie of parentData ">
                   <ng-template carouselSlide [id]="movie.id">

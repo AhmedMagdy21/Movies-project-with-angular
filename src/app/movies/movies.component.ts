@@ -9,12 +9,17 @@ import { MoviesService } from '../movies.service';
   animations: [fade]
 })
 export class MoviesComponent implements OnInit {
-
+  pages:number[]=[1,2,3,4,5,6];
+  pageNumber:number[]=[];
   trendingMovies:any[] = [];
   imgPrefix:string = `http://image.tmdb.org/t/p/w500/`
   constructor(private _MoviesService:MoviesService) 
   {
-    _MoviesService.getTrending('movie').subscribe ((data)=>
+    this.changePage(1);
+  }
+  changePage(pageNumber:number)
+  {
+    this._MoviesService.getMoviePigaion(pageNumber).subscribe ((data)=>
     {
       this.trendingMovies = data.results;
     })

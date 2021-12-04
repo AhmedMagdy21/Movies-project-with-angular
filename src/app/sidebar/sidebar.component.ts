@@ -32,9 +32,11 @@ export class SidebarComponent implements OnInit {
     colorBoxs.eq(1).css("backgroundColor","rgba(1, 37, 1, 0.788)");
     colorBoxs.eq(2).css("backgroundColor","rgba(43, 1, 1, 0.788)");
     colorBoxs.eq(3).css("backgroundColor","rgba(41, 39, 8, 0.788)");
-    colorBoxs. click (( e : any)=>{
+   
+    colorBoxs.click(( e : any)=>{
       let myColor = $(e.target).css("backgroundColor");     
-      $(".change").css("background", myColor)
+      $(".change").css("background", myColor);
+      // $(".Text-Color").css("color", myColor)
     })
    
     
